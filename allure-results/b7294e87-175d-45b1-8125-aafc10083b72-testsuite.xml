@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661444846217' stop='1661444851314'>
+    <name>login page feature test</name>
+    <title>login page feature test</title>
+    <test-cases>
+        <test-case start='1661444846218' status='broken' stop='1661444851311'>
+            <name>login Page Valid Case Sanity</name>
+            <title>login Page Valid Case Sanity</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps>
+                <step start='1661444846221' status='passed' stop='1661444851179'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ad581f4f-0482-429c-928b-0b14513f3e7f-attachment.json' type='application/json' size='87'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661444851179' status='passed' stop='1661444851294'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='cd028860-0370-4e39-a904-e77f0f0f9588-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661444851295' status='broken' stop='1661444851311'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c7d831d2-d432-4cbb-bed3-bcddb0ae4514-attachment.json' type='application/json' size='66'/>
+                    </attachments>
+                    <steps>
+                        <step start='1661444851297' status='broken' stop='1661444851311'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='88f60efe-06bb-4003-ae85-cb34a3ad4b7a-attachment.json' type='application/json' size='60'/>
+                            </attachments>
+                            <steps>
+                                <step start='1661444851301' status='broken' stop='1661444851311'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments/>
+                                    <steps>
+                                        <step start='1661444851302' status='broken' stop='1661444851311'>
+                                            <name>POST /session/:sessionId/element</name>
+                                            <title>POST /session/:sessionId/element</title>
+                                            <attachments>
+                                                <attachment title='Request' source='90c87cc3-1d0b-4649-b841-56ceae028932-attachment.json' type='application/json' size='63'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>signIn is not defined</message>
+                <stack-trace>ReferenceError: signIn is not defined
+                    at LoginPage.Login (/home/preyas.r@ah.zymrinc.com/Desktop/preyas/WendriverIO/test/pageObjects/loginPage.js:45:43)
+                    at Context.&lt;anonymous> (/home/preyas.r@ah.zymrinc.com/Desktop/preyas/WendriverIO/test/specs/LoginPage.spec.js:38:25)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,3 +1,7 @@
+
+
+
+
 class LoginPage {
 
     get emailid() {
@@ -14,6 +18,11 @@ class LoginPage {
     get signIn() {
         return $("//input[@value='Login']")
     }
+
+
+
+
+
 
 
 
