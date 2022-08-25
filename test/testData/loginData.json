@@ -1,0 +1,22 @@
+[
+    {
+        "emailid": "testautomate@gmail.com",
+        "password": "test123new"
+    },
+    {
+        "emailid": "testautomate",
+        "password": "test123"
+    },
+    {
+        "emailid": "",
+        "password": ""
+    },
+    {
+        "emailid": "testautomate",
+        "password": ""
+    },
+    {
+        "emailid": "",
+        "password": "test123"
+    }
+]

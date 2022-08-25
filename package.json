@@ -1,0 +1,25 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@faker-js/faker": "^7.4.0",
+        "@wdio/allure-reporter": "^7.23.0",
+        "@wdio/cli": "^7.23.0",
+        "@wdio/local-runner": "^7.23.0",
+        "@wdio/mocha-framework": "^7.23.0",
+        "@wdio/spec-reporter": "^7.23.0",
+        "chromedriver": "^104.0.0",
+        "wdio-chromedriver-service": "^7.3.2"
+    },
+    "scripts": {
+        "tests": "npx wdio run wdio.conf.js",
+        "Smoketest": "npx wdio run wdio.conf.js --mochaOpts.grep Smoke",
+        "accountmodule_suite": "npx wdio run wdio.conf.js --suite accountmodule",
+        "login_suite": "npx wdio run wdio.conf.js --suite loginmodule",
+        "Generatereport": "allure generate allure-results --clean && allure open"
+    },
+    "dependencies": {
+        "chai": "^4.3.6"
+    }
+}
