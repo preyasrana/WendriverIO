@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//a[@class='btn btn-primary'][contains(text(),'New Address')]"
+}

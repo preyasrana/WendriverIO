@@ -3,19 +3,20 @@ const expectchai = require('chai').expect
 const loginPage = require('../pageObjects/loginPage')
 const accountPage = require('../pageObjects/accountPage')
 const editaccountPage = require('../pageObjects/editaccountPage')
-
 const fakerlib = require('@faker-js/faker')
+const constantdata = require('../utils/constant')
+const configdata = require('../configData/config')
+
 
 describe('update myaccount details page', async () => {
 
     it('login Page Valid Case', async () => {
-
         await browser.url('/index.php?route=account/login')
         await browser.maximizeWindow()
-        await loginPage.Login("testautomate@gmail.com", "test123")
+        await loginPage.Login(configdata.emailid, configdata.password)
         await accountPage.editaccount.waitForExist()
-        await expect(browser).toHaveUrlContaining("account");
-        await expect(browser).toHaveTitle("My Account");
+        await expect(browser).toHaveTitle(constantdata.My_account_title);
+        await expect(browser).toHaveUrlContaining(constantdata.Accounturl);
 
     })
 
